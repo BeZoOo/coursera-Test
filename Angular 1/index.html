@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lg="en" ng-app="myFirstApp">
+<head>
+    <meta charset="utf-8">
+    <title>Simple App with Angular</title>
+    <style>
+        body {
+            font-family : Arial, Tahoma, sans-serif;    
+        }
+        
+        input {
+            padding: 10px;
+            width: 500px;
+            border-radius: 5px;
+            border: 1px solid #d1d1d1;
+        }
+        
+        button {
+            background-color: #fff;
+            margin-top: 20px;
+            min-height: 30px;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #EEE; 
+        }
+        
+    </style>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+    
+<body>
+    <div ng-controller="myCrtl"> 
+        <h1>Lunch Checker</h1>
+        <div>
+            <input type="text" placeholder="list comma separated dishes you usually have for lunch" ng-model="dishes">
+            <button ng-click="check();">Check If It Too Much!</button>
+            <p>{{result}}</p>
+        </div>    
+    </div>
+</body>
+</html>

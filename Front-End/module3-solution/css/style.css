@@ -55,14 +55,9 @@ body {
 
 .navbar-inverse .navbar-nav > li > a {
 	color: #D0D0D0;
-<<<<<<< HEAD
 	margin-top: 8px;
 	transition: all 0.2s ease-in-out;
 	text-align: center;
-=======
-	margin-top: 10px;
-	transition: all 0.2s ease-in-out;
->>>>>>> 52922ee8cfddb8e5b39dc035d430df4f2cbe565d
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -105,7 +100,6 @@ body {
 	word-spacing: .1em;
 	letter-spacing: 1px;
 	color: #0d0e0b;
-<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 767px) {
@@ -113,6 +107,4 @@ body {
 	#navbar-brand h2 {
     margin: 14px 34px;
 	}
-=======
->>>>>>> 52922ee8cfddb8e5b39dc035d430df4f2cbe565d
 }
