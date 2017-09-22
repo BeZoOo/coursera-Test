@@ -34,11 +34,11 @@
         
         if (firstLetter === 'j') {
         
-            sayBye(names[i]);
+            byeSpeaker.speak(names[i]);
         
         } else {
             
-            sayHello(names[i]);
+            helloSpeaker.speak(names[i]);
         }
     }
     

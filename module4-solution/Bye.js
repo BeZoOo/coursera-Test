@@ -1,9 +1,19 @@
 /*global console*/
 
-
-function sayBye(name) {
+(function (window) {
     'use strict';
-    var bye = "Good Bye";
-    console.log(bye + " " + name);
-}
+    
+    var byeSpeaker = {};
 
+    byeSpeaker.speakWord = "Good Bye";
+
+
+    byeSpeaker.speak = function (name) {
+        
+        console.log(byeSpeaker.speakWord + " " + name);
+        
+    };
+    
+    window.byeSpeaker = byeSpeaker;
+
+}(window));

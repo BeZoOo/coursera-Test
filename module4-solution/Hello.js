@@ -1,7 +1,19 @@
 /*global console*/
 
-function sayHello(name) {
+(function (window) {
+    
     'use strict';
-    var hi = "Hello";
-    console.log(hi + " " + name);
-}
+    
+    var helloSpeaker = {};
+
+    helloSpeaker.speakWord = "Hello";
+
+    helloSpeaker.speak = function (name) {
+        
+        console.log(helloSpeaker.speakWord + " " + name);
+        
+    };
+    
+    window.helloSpeaker = helloSpeaker;
+
+}(window));
