@@ -1,0 +1,107 @@
+*{
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: Aller;
+	src: url('Aller_Rg.ttf');
+}
+
+body{
+	font-family: Arial, sans-serif, Tahoma;
+}
+
+h1{
+	text-align: center;
+	margin: 60px 0px 50px 0px;
+	font-family: Aller;
+}
+
+.chicken, .beef, .sushi{
+	float: left;
+
+	border:2.5px solid #000;
+	margin: 20px 10px 20px 19px;
+	padding: 0px 10px 10px 15px;
+
+}
+
+p{
+	margin-top: 50px;
+	line-height: 1.3em;
+	color: #000;
+}
+
+h2{
+	float: right;
+	border:2px solid #000;
+	margin-top: -2px;
+	width: 150px;
+	text-align: center;
+	margin-right: -12px;
+	font-size: 1.3em;
+	padding: 3px 0px 3px 0px;
+}
+
+/* First div */
+
+.chicken{
+	background-color: #b4b078;
+}
+
+.chicken h2{
+	background-color: #749a9e;
+	color: #FFF;
+}
+
+/* Second div */
+
+.beef {
+	background-color: #EEE;
+}
+
+.beef h2{
+	background-color: #df5656;
+
+	color: #FFF;
+}
+
+/* Third div */
+
+.sushi{
+	background-color: #98dfdc;
+}
+
+.sushi h2{
+	background-color: #6e2768;
+	color: #FFF;
+}
+
+/** Responsive and media query **/
+
+.row{
+	width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+	.chicken, .beef, .sushi{
+		width: 30.3%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.chicken, .beef{
+		width: 46%;
+	}
+
+	.sushi{
+		margin-right: 22px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.chicken, .beef, .sushi{
+		width: 100%;
+		margin: 20px 0px 20px 0px;
+	}
+}
